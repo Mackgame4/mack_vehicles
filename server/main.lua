@@ -1,0 +1,5 @@
+RegisterNetEvent('mack_vehicles:update')
+AddEventHandler('mack_vehicles:update', function(status)
+    --print(status)
+    TriggerClientEvent("mack_vehicles:update", -1, status)
+end)
